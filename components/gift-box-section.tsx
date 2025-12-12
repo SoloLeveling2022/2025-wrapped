@@ -18,7 +18,7 @@ export function GiftBoxSection() {
       const timeline = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top center",
+          start: "top bottom",
           end: "center center",
           toggleActions: "play none none reverse",
         },
@@ -115,7 +115,7 @@ export function GiftBoxSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-muted/20"
+      className="relative min-h-screen pt-[30vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-muted/20"
     >
       {/* Sparkles container */}
       <div ref={sparklesRef} className="absolute inset-0 pointer-events-none" />

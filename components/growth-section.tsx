@@ -163,7 +163,7 @@ export function GrowthSection() {
     <section
       id="growth"
       ref={sectionRef}
-      className="py-24 md:py-32 bg-gradient-to-br from-secondary/30 via-background to-accent/20"
+      className="py-24 md:py-32 pb-[50vh] bg-gradient-to-br from-secondary/30 via-background to-accent/20"
     >
       <div className="container mx-auto px-6">
         <h2 ref={titleRef} className="font-serif text-5xl md:text-6xl font-bold text-center mb-6 text-balance">
