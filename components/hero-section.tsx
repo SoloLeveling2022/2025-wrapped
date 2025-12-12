@@ -99,9 +99,9 @@ export function HeroSection() {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <h1
           ref={titleRef}
-          className="font-serif text-6xl md:text-8xl lg:text-9xl font-bold text-foreground mb-6"
+          className="font-serif text-6xl md:text-8xl lg:text-9xl font-bold text-foreground mb-6 text-balance"
         >
-          Ur: 2025 <br/> {" "}Wrapped
+          Ur: 2025 Wrapped
         </h1>
         <p ref={subtitleRef} className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto text-balance">
           Your growth, your lessons, and your lasting impact.
