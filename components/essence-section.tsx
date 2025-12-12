@@ -22,7 +22,7 @@ const essenceTraits = [
   },
   {
     title: "Genuinely Real",
-    description: "No pretense. Raw, honest, and beautifully imperfect—that's you.",
+    description: "No pretense. Raw, honest, and beautifully perfect - that's you.",
   },
 ]
 
