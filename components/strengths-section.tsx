@@ -42,51 +42,32 @@ export function StrengthsSection() {
 
   useGSAP(
     () => {
-      gsap.to(sectionRef.current, {
+      gsap.from(titleRef.current, {
         scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top top",
-          end: "+=1000",
-          pin: true,
-          scrub: 1,
-        },
-      })
-
-      gsap.to(titleRef.current, {
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top top",
-          end: "+=500",
-          scrub: 1,
+          trigger: titleRef.current,
+          start: "top 80%",
           toggleActions: "play none none reverse",
         },
-        scale: 0.8,
-        y: -50,
-        opacity: 0.3,
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "power2.out",
       })
 
       const items = Array.from(listRef.current?.children || [])
       items.forEach((item, index) => {
-        gsap.fromTo(
-          item,
-          {
-            x: index % 2 === 0 ? -200 : 200,
-            opacity: 0,
-            rotation: index % 2 === 0 ? -15 : 15,
+        gsap.from(item, {
+          scrollTrigger: {
+            trigger: item,
+            start: "top 85%",
+            toggleActions: "play none none reverse",
           },
-          {
-            x: 0,
-            opacity: 1,
-            rotation: 0,
-            scrollTrigger: {
-              trigger: item,
-              start: "top 80%",
-              end: "top 50%",
-              scrub: 1,
-              toggleActions: "play none none reverse",
-            },
-          },
-        )
+          opacity: 0,
+          y: 50,
+          duration: 0.8,
+          delay: index * 0.1,
+          ease: "power2.out",
+        })
 
         const itemElement = item as HTMLElement
         const number = itemElement.querySelector("[data-number]") as HTMLElement

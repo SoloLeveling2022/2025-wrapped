@@ -9,24 +9,17 @@ gsap.registerPlugin(ScrollTrigger)
 
 const growthMilestones = [
   {
-    title: "Discovered Your Needs",
-    description: "You understood what truly matters: relationships, life, wellbeing.",
+    title: "Solo Hackathon Win",
+    description: "You stood on your own, trusted yourself, and proved your capability through confidence, clarity, and determination.",
   },
   {
-    title: "Realized Your Boundaries",
-    description: "You learned to set boundaries, protect your peace, and say no guilt-free.",
+    title: "Stepping Into Independence",
+    description: "You applied for your PAN on your own, a small and meaningful milestone in your journey toward independence.",
   },
+
   {
-    title: "Clarity in Partnership",
-    description: "You gained a clear vision for an ideal partner: qualities, values, and presence.",
-  },
-  {
-    title: "Emotional Strength",
-    description: "Pain and reflection forged your resilience, connecting you to your inner power.",
-  },
-  {
-    title: "Valued Space",
-    description: "You understood space, healing, and clarity are crucial for your growth.",
+    title: "Professional Growth",
+    description: "You gained clarity in your career goals, built confidence in your skills, and learned to move forward with purpose and self-belief.",
   },
 ]
 

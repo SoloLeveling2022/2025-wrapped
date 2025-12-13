@@ -25,7 +25,7 @@ export default function Home() {
       <StrengthsSection />
       <ImpactSection />
       <QualitiesSection />
-      <ChallengesSection />
+      {/* <ChallengesSection /> */}
       <GrowthSection />
       <GiftBoxSection />
     </main>

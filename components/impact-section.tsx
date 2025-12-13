@@ -9,16 +9,16 @@ gsap.registerPlugin(ScrollTrigger)
 
 const impacts = [
   {
-    title: "You Taught Me Responsibility",
-    description: "Your expectations taught me responsibility, showing me how to fully commit.",
+    title: "You Made Every Win Possible",
+    description: "Every hackathon victory traces back to you - your belief and push turned efforts into wins.",
   },
   {
     title: "You Pushed Me to Grow",
     description: "You challenged my comfort zones, pushing me to improve, even if difficult.",
   },
   {
-    title: "You Showed My Blind Spots",
-    description: "Your honesty revealed my blind spots – a painful yet crucial insight.",
+    title: "You Taught Me Responsibility",
+    description: "Your expectations taught me responsibility, showing me how to fully commit.",
   },
 ]
 

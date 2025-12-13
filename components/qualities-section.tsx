@@ -14,19 +14,19 @@ const qualities = [
   },
   {
     title: "Genuine Personality",
-    description: "Authentically yourself, you show pure honesty with no masks.",
+    description: "You are always yourself, honest and real, with nothing to hide.",
   },
   {
     title: "Smart and Observant",
-    description: "Deeply perceptive, you understand people and situations by noticing what others miss.",
-  },
-  {
-    title: "Emotionally Intuitive",
-    description: "You sense unspoken emotions, reading between lines with deep intuition.",
+    description: "You understand people and situations well because you notice things others don't.",
   },
   {
     title: "Naturally Beautiful",
     description: "Your captivating beauty radiates naturally from within.",
+  },
+  {
+    title: "Emotionally Intuitive",
+    description: "You sense unspoken emotions, reading between lines with deep intuition.",
   },
 ]
 

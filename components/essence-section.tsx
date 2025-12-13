@@ -18,11 +18,11 @@ const essenceTraits = [
   },
   {
     title: "A Deep Thinker",
-    description: "You shun surface talks. You live in the depths, understanding beyond the obvious.",
+    description: "You avoid small talk. You think deeply and look past what is obvious.",
   },
   {
     title: "Genuinely Real",
-    description: "No pretense. Raw, honest, and beautifully perfect - that's you.",
+    description: "No pretending. You are real, honest, and perfectly yourself.",
   },
 ]
 
