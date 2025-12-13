@@ -8,6 +8,7 @@ export function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null)
   const titleRef = useRef<HTMLHeadingElement>(null)
   const subtitleRef = useRef<HTMLParagraphElement>(null)
+  const scrollIndicatorRef = useRef<HTMLDivElement>(null)
   const blob1Ref = useRef<HTMLDivElement>(null)
   const blob2Ref = useRef<HTMLDivElement>(null)
   const blob3Ref = useRef<HTMLDivElement>(null)
@@ -51,6 +52,23 @@ export function HeroSection() {
         duration: 1.5,
         ease: "power4.inOut",
         delay: 1.2,
+      })
+
+      // Scroll indicator animation
+      gsap.from(scrollIndicatorRef.current, {
+        opacity: 0,
+        y: -20,
+        duration: 1,
+        delay: 2,
+        ease: "power2.out",
+      })
+
+      gsap.to(scrollIndicatorRef.current, {
+        y: 10,
+        duration: 1.5,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
       })
 
       gsap.to(blob1Ref.current, {
@@ -106,6 +124,22 @@ export function HeroSection() {
         <p ref={subtitleRef} className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto text-balance">
           Your growth, your lessons, and your lasting impact.
         </p>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div
+        ref={scrollIndicatorRef}
+        className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 cursor-pointer group"
+        onClick={() => {
+          document.getElementById("essence")?.scrollIntoView({ behavior: "smooth" })
+        }}
+      >
+        <span className="text-sm text-muted-foreground font-medium tracking-wider uppercase group-hover:text-foreground transition-colors">
+          Scroll to Explore
+        </span>
+        <div className="w-6 h-10 border-2 border-muted-foreground/50 group-hover:border-foreground rounded-full flex items-start justify-center p-2 transition-colors">
+          <div className="w-1.5 h-1.5 bg-muted-foreground/50 group-hover:bg-foreground rounded-full transition-colors" />
+        </div>
       </div>
     </section>
   )
